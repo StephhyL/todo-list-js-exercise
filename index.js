@@ -28,6 +28,9 @@ const task1 = newTask("Clean Cat Litter", "Take all the pooooooop out of the lit
 const task2 = newTask("Do Laundry", "ohhhh noooooooo");
 const tasks = [task1, task2];
 
+task1.logState(); // clean cat littler has not been completed
+task1.markCompleted(); // changes completed into true
+task1.logState(); // clean cat littler has been completed.
 
 console.log(tasks);
 

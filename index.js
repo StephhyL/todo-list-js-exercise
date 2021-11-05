@@ -6,19 +6,18 @@ const newTask = (title, description) => {
   const task = {
     title,  // title: title,
     description, // description: description
-    complete: false
+    complete: false,
 
     logState: function() {
       console.log(`${this.title} has${this.complete ? " " : " not "}been completed`);
-    }
+    },
 
     markCompleted: function() {
       this.compelte = true;
     }
 
 
-
-  }
+  };
   return task;
 };
 
